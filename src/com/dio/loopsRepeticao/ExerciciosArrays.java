@@ -25,9 +25,11 @@ números inteiros e mostre-os na ordem inversa.*/
         }
     }
 
+
     public static void consoantes() {
         Scanner scan = new Scanner(System.in);
         String[] letras = new String[6];
+
         int i = 0;
         int consoantes = 0;
         while (i < letras.length) {
@@ -50,6 +52,8 @@ números inteiros e mostre-os na ordem inversa.*/
                letras[j].equals("t") || letras[j].equals("v") || letras[j].equals("w") ||
                letras[j].equals("x") || letras[j].equals("y") || letras[j].equals("z")){
                 consoantes++;
+                System.out.print(letras[j] + " ");
+
             }
 
         }
