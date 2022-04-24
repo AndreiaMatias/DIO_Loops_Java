@@ -15,6 +15,8 @@ public class Main {
         System.out.println("4 - Par/Ímpar");
         System.out.println("5 - Tabuada");
         System.out.println("6 - Fatorial");
+        System.out.println("7 - Array inverso");
+        System.out.println("8 - Consoantes");
 
         int opcao = scan.nextInt();
 
@@ -32,6 +34,10 @@ public class Main {
                 ExerciciosLoops.tabuada();
             case 6:
                 ExerciciosLoops.fatorial();
+            case 7:
+                ExerciciosArrays.inverso();
+            case 8:
+                ExerciciosArrays.consoantes();
 
         }
 
