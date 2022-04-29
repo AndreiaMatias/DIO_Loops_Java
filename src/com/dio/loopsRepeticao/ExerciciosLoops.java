@@ -3,7 +3,9 @@ package com.dio.loopsRepeticao;
 import java.util.Scanner;
 
 public class ExerciciosLoops {
-
+    /*Faça um programa que leia um conjunto de dois valores,
+      o primeiro representando o nome do aluno e o segundo a sua idade.
+      Pare inserindo 0 no campo nome*/
     public static void nomeIdade(){
         Scanner scan = new Scanner(System.in);
         String nome = "";
@@ -20,7 +22,9 @@ public class ExerciciosLoops {
             }
         }
     }
-
+    /*Faça um programa que peça uma nota entre 0 e 10
+      Mostre uma mensagem caso o valor seja inválido
+      e continue pedindo até que o usuário informe um valor válido*/
     public static void nota(){
         Scanner scan = new Scanner(System.in);
         int nota;
@@ -35,7 +39,8 @@ public class ExerciciosLoops {
             }
         }
     }
-
+    /*Faça um programa que leia 5 números
+      informe o maior número e a média deles*/
     public static void maiorMedia(){
         Scanner scan = new Scanner(System.in);
         int maior=0;
@@ -58,7 +63,9 @@ public class ExerciciosLoops {
         System.out.println("Média: " + media);
         System.out.println("Maior: " + maior);
     }
-
+    /*Faça um programa que leia N números inteiros.
+     Calcule e mostre a quantidade de números pares
+     e a quantidade de números ímpares*/
     public static void parImpar(){
         Scanner scan = new Scanner(System.in);
 
@@ -81,12 +88,16 @@ public class ExerciciosLoops {
         System.out.println("Quantidade de números ímpares: " + impar);
 
     }
-
+    /*Desenvolva um gerador de tabuada capaz de gerar a tabuada de qualquer número inteiro
+      entre 1 e 10. O Usuário deve informar de qual número ele deseja ver a tabuada.
+      */
     public static void tabuada(){
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("Qual tabuada você quer visualizar (entre 1 e 10)?");
-        int num = scan.nextInt();
+        int num = 0;
+        do {
+            System.out.println("Qual tabuada você quer visualizar (entre 1 e 10)?");
+            num = scan.nextInt();
+        }while(num < 1 || num > 10);
 
         System.out.println("Tabuada de " + num + ":");
 
@@ -95,7 +106,7 @@ public class ExerciciosLoops {
             System.out.println(num + " X " + i + " = " + resultado);
         }
     }
-
+    /*Faça um programa que calcule o fatorial de um número fornecido pelo usuário*/
     public static void fatorial(){
         Scanner scan = new Scanner(System.in);
 

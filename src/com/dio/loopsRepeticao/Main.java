@@ -17,6 +17,8 @@ public class Main {
         System.out.println("6 - Fatorial");
         System.out.println("7 - Array inverso");
         System.out.println("8 - Consoantes");
+        System.out.println("9 - Números aleatórios");
+        System.out.println("10 - Matriz");
 
         int opcao = scan.nextInt();
 
@@ -24,20 +26,34 @@ public class Main {
         switch(opcao){
             case 1:
                 ExerciciosLoops.nomeIdade();
+                break;
             case 2:
                 ExerciciosLoops.nota();
+                break;
             case 3:
                 ExerciciosLoops.maiorMedia();
+                break;
             case 4:
                 ExerciciosLoops.parImpar();
+                break;
             case 5:
                 ExerciciosLoops.tabuada();
+                break;
             case 6:
                 ExerciciosLoops.fatorial();
+                break;
             case 7:
                 ExerciciosArrays.inverso();
+                break;
             case 8:
                 ExerciciosArrays.consoantes();
+                break;
+            case 9:
+                ExerciciosArrays.numerosAleatorios();
+                break;
+            case 10:
+                ExerciciosArrays.matriz();
+                break;
 
         }
 
